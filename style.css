@@ -7,10 +7,17 @@
 
 /* ----------Tags---------- */
 
+body {
+  background-image: url(./photos/bodyBackground.jpg);
+  /* display:flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
 header {
   width: 100%;
   background-image: url(./photos/headerTexture.jpg);
-  position: fixed;
+  /* position: fixed; */
   border-bottom-left-radius: 15%;
   border-bottom-right-radius: 15%;
   box-shadow:0 0 12px rgb(0, 0, 0);
@@ -22,14 +29,6 @@ nav {
   justify-content: space-between;
 }
 
-a {
-  font-size: xx-large;
-  color:rgb(215, 236, 255);
-  text-decoration: none;
-  border-left: 3px solid azure;
-  padding-left: 5%;
-}
-
 a.hover {
   cursor: pointer;
 }
@@ -38,8 +37,20 @@ a.hover {
 
 .currentPage {
   pointer-events: none;
-  color: rgb(196, 196, 196);
+  color: rgb(196, 196, 196) !important;
   text-decoration: underline;
+}
+
+.bGGLink {
+  font-size: larger;
+  font-weight: 900;
+  color:rgb(27, 152, 255);
+  transition: font-size 2s, color 2s;
+}
+
+.bGGLink:hover {
+  font-size: xx-large;
+  color:rgb(0, 73, 102);
 }
 
 /* ----------IDs---------- */
@@ -66,4 +77,23 @@ a.hover {
   flex-direction: column;
 
   padding: 2% 10%;
+}
+
+#aLinks {
+  font-size: xx-large;
+  color:rgb(215, 236, 255);
+  text-decoration: none;
+  border-left: 3px solid azure;
+  padding-left: 5%;
+}
+
+#indexMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#indexMainContents {
+  padding-top: 2%;
 }
