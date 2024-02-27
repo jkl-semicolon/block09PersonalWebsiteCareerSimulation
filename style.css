@@ -118,7 +118,6 @@ iframe:hover{
   flex-direction:column;
   margin:auto;
   align-items:center;
-
 }
 
 #aboutMainHeader {
@@ -159,6 +158,7 @@ iframe:hover{
   flex-direction:row;
   flex-wrap:wrap;
   padding: 1% 2% 1% 2%;
+  margin-bottom:10%;
 }
 
 #indexMain {
