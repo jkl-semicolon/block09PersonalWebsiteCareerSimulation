@@ -184,3 +184,28 @@ iframe:hover{
   align-items:center;
   padding:0 2%;
 }
+
+#portfolioMain {
+  display:flex;
+  justify-content:center;
+  height:100%;
+  width:75%;
+  align-self:center;
+  background-image: url(./photos/headerTexture.jpg);
+}
+
+#portfolioMainPartition {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  height:90%;
+  width:90%;
+  margin:auto;
+  background-image: url(./photos/bodyBackground.jpg);
+}
+
+#portfolioSection {
+  margin: 2%;
+  padding: 1%;
+  border: 5px ridge rgb(0, 73, 102);
+}
