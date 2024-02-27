@@ -1,4 +1,4 @@
-# My Website
+My Website
 #     -Alex Wang
 
 # Notes to reviewer:
