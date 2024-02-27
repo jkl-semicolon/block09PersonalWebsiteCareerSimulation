@@ -26,6 +26,8 @@ a {
   font-size: xx-large;
   color:rgb(215, 236, 255);
   text-decoration: none;
+  border-left: 3px solid azure;
+  padding-left: 5%;
 }
 
 a.hover {
@@ -63,5 +65,5 @@ a.hover {
   display: flex;
   flex-direction: column;
 
-  padding: 2% 5%;
+  padding: 2% 10%;
 }
