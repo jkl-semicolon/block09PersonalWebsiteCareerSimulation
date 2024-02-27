@@ -9,18 +9,29 @@
 
 body {
   background-image: url(./photos/bodyBackground.jpg);
-  /* display:flex;
+  display:flex;
   flex-direction: column;
-  justify-content: space-between; */
+  justify-content: space-around;
 }
 
 header {
   width: 100%;
   background-image: url(./photos/headerTexture.jpg);
   /* position: fixed; */
-  border-bottom-left-radius: 15%;
-  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 12%;
+  border-bottom-right-radius: 12%;
   box-shadow:0 0 12px rgb(0, 0, 0);
+}
+
+footer {
+  display:block;
+  width: 100%;
+  height: 20%;
+  background-image: url(./photos/headerTexture.jpg);
+  /* position: fixed; */
+  border-top-left-radius: 12%;
+  border-top-right-radius: 12%;
+  box-shadow:0 0 -12px rgb(0, 0, 0);
 }
 
 nav {
@@ -31,6 +42,21 @@ nav {
 
 a.hover {
   cursor: pointer;
+}
+
+div + div {
+  /* margin-left:4%; */
+}
+
+iframe{
+  width:90%;
+  object-fit:contain;
+  height:auto;
+  transition: height 2s;
+}
+
+iframe:hover{
+  height:100%;
 }
 
 /* ----------Classes---------- */
@@ -87,13 +113,74 @@ a.hover {
   padding-left: 5%;
 }
 
+#aboutMain {
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+  align-items:center;
+
+}
+
+#aboutMainHeader {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin:auto;
+  justify-content:space-evenly;
+  padding:2% 0 1% 0;
+  border-image:url(./photos/headerTexture.jpg) 1% round;
+  border-bottom:10px solid;
+}
+
+#aboutSections{
+ width:48%;
+ height:35%;
+ padding-left:2%;
+ padding-right:2%;
+ padding-top:2%;
+ padding-bottom:2%;
+ display:flex;
+ flex-direction:column;
+ justify-content:space-between;
+ margin-left: 1%;
+ margin-right: 1%;
+ margin-top: 1%;
+ margin-bottom: 1%;
+ border:3px solid black;
+}
+
+#aboutSectionHeaders{
+  text-decoration:underline;
+  color: rgb(0, 73, 102);
+}
+ 
+#aboutMainMain {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  padding: 1% 2% 1% 2%;
+}
+
 #indexMain {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  width: 80%;
+  margin: auto;
+  border-image: url(./photos/headerTexture.jpg) 1% round;
+  border-left: 20px solid;
+  border-right: 20px solid;
 }
 
 #indexMainContents {
   padding-top: 2%;
+}
+
+#topIndexMain {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:center;
+  padding:0 2%;
 }
